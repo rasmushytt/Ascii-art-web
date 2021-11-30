@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-color: rgb(144, 204, 138);">
+<h1 style="text-align: center; background-color: rgb(50, 167, 39); font-family: sans-serif; padding-top: 20px;; padding-bottom: 20px;">ASCII Art Generator</h1>
+<p style="text-align: center; font-family: sans-serif">Input desired text below.</p>
+<form style="text-align: center; font-family: sans-serif" id="form" method="POST">
+    <select style="text-align: center; background-color: rgb(149, 228, 149); font-family: sans-serif; border-radius: 12px;" name="banner" id="banner">
+        <option value="standard">Standard</option>
+        <option value="shadow">Shadow</option>
+        <option value="thinkertoy">Thinkertoy</option>
+    </select>
+    <input style="background-color: rgb(149, 228, 149); font-family: sans-serif; border-radius: 12px;" type="submit" value="Generate">
+    <button style="background-color: rgb(149, 228, 149); font-family: sans-serif; border-radius: 12px;" type="submit" formaction="/ascii-art/download" download>Download</button>
+    <br><br>
+    <input style="background-color: rgb(149, 228, 149); font-family: sans-serif; border-radius: 12px;" type="text" id="text" name="text">
+</form>
+
+<p style="text-align: center; font-family: sans-serif">Output:</p>
+<pre style="text-align: center;">{{.}}</pre>
+
+</body>
+</html>
